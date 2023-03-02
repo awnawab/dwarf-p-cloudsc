@@ -212,6 +212,12 @@ endif()
 
 
 if( HAVE_CLOUDSC_GPU_SCC_FIELD )
+
+    cloudsc_add_compile_options(
+        SOURCES cloudsc_driver_gpu_scc_field_mod.F90
+        FLAGS   "-Mcuda"
+    )
+
     ecbuild_add_executable(
         TARGET dwarf-cloudsc-gpu-scc-field
         SOURCES
