@@ -51,7 +51,7 @@ if( HAVE_CUDA )
     # .cuf.F90 files and force the compile flags here.
     # ========================================================================
     cloudsc_add_compile_options(
-        SOURCES ${CLOUDSC_CUDA_SOURCES}
+        SOURCES ${CLOUDSC_CUDA_SOURCES} module/cloudsc_field_state_mod.F90
         FLAGS "-Mcuda=maxregcount:128"
     )
 
