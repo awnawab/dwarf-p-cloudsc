@@ -38,7 +38,7 @@ projects :
 
     - field_api :
         git     : ${BITBUCKET}/rdx/field_api
-        version : master
+        version : naan-get-devptr
         optional: true
         require : ecbuild
         cmake   : >
